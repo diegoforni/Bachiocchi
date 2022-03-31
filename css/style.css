@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+html {
+    scroll-behavior: smooth;
+  }
 body {
     color: #797979;
     background: #ffffff;
@@ -24,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #EF233C;
+    color: #6A7553;
     outline: none;
     text-decoration: none;
 }
@@ -36,6 +39,7 @@ a:focus {
 
 .container-fluid {
     max-width: 1366px;
+    margin: auto;
 }
 
 .btn {
@@ -44,20 +48,20 @@ a:focus {
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #EF233C;
+    background: #6A7553;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #6A7553;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #EF233C;
+    color: #6A7553;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #6A7553;
+    border-color: #6A7553;
 }
 
 #loader {
@@ -91,7 +95,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid #6A7553;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -188,7 +192,7 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
+        color: #6A7553;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -211,7 +215,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
+        color: #6A7553;
     }
 }
 
@@ -222,7 +226,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: #6A7553;
     }
     
     .navbar .navbar-nav {
@@ -245,22 +249,26 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
+    height: 85vh;
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
+    background: url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    filter: linear-gradient(blur(4px));
-
-    
-    
+    background-size: cover;  
 }
-
-.hero .container-fluid {
-    padding: 0;
+.bg-image {
+    /* The image used */
+    background-image: url(../img/hero-bg.jpg);
+  
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
 }
+  
+
+
 
 .hero .hero-image {
     position: relative;
@@ -288,6 +296,7 @@ a:focus {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
+    margin-top: 135px;
 }
 
 .hero .hero-text h1 {
@@ -319,7 +328,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #6A7553;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -422,6 +431,7 @@ a:focus {
 .section-header {
     position: relative;
     margin-bottom: 45px;
+    margin-top: 20vh;
 }
 
 .section-header p {
@@ -433,7 +443,6 @@ a:focus {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
     background: #ffffff;
 }
 
@@ -444,7 +453,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+
     z-index: -1;
 }
 
@@ -455,7 +464,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #6A7553;
     z-index: 1;
 }
 
@@ -504,6 +513,7 @@ a:focus {
 
 .about .about-content {
     padding: 0 60px;
+    margin: auto;
 }
 
 .about .about-text p {
@@ -537,7 +547,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 0px;
-    background: #EF233C;
+    background: #6A7553;
     border-radius: 10px;
     transition: 2s;
 }
@@ -552,7 +562,51 @@ a:focus {
     }
 }
 
-
+* {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url(../img/hero-bg.jpg);
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+/*carousel*/
+.carousel{
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 45px;
+    background-color: #CDC5B2;
+}
 /*******************************/
 /******* Experience CSS ********/
 /*******************************/
@@ -570,7 +624,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #EF233C;
+    background: #6A7553;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -921,11 +975,25 @@ a:focus {
 /*******************************/
 .banner {
     position: relative;
-    width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+    
+    
+
 }
+* {
+    box-sizing: border-box;
+  }
+  
+
+  
+
 
 .banner .container {
     max-width: 750px;
@@ -934,10 +1002,19 @@ a:focus {
 
 .banner .section-header {
     margin-bottom: 20px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
 }
 
 .banner .section-header p {
-    color: #414141;
+    color: #E9E5DC;
     background: transparent;
 }
 
@@ -946,22 +1023,30 @@ a:focus {
 }
 
 .banner .section-header h2 {
-    color: #ffffff;
+    color: #E9E5DC;
 }
 
 .banner .section-header h2 span {
-    color: #414141;
+    color: #E9E5DC;
     font-size: 50px;
 }
 
 .banner .banner-text p {
     font-size: 18px;
-    color: #ffffff;
+    color: #E9E5DC;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    border: 3px solid #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .banner .banner-text .btn {
     margin-top: 15px;
-    color: #EF233C;
+    color: #6A7553;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1311,7 +1396,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #EF233C;
+    background: #6A7553;
 }
 
 .contact .container-fluid {
@@ -1322,7 +1407,7 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: #6A7553;
 }
 
 .contact .contact-form input {
@@ -1356,7 +1441,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #6A7553;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
