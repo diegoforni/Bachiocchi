@@ -16,7 +16,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    color: #6A7553;
 }
 
 a {
@@ -431,7 +431,7 @@ a:focus {
 .section-header {
     position: relative;
     margin-bottom: 45px;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .section-header p {
@@ -453,7 +453,6 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-
     z-index: -1;
 }
 
@@ -599,14 +598,6 @@ a:focus {
     padding: 20px;
     text-align: center;
   }
-/*carousel*/
-.carousel{
-    width: 90%;
-    height: 70vh;
-    margin: auto;
-    margin-bottom: 45px;
-    background-color: #CDC5B2;
-}
 /*******************************/
 /******* Experience CSS ********/
 /*******************************/
@@ -793,6 +784,7 @@ a:focus {
 }
 
 .service .service-item {
+
     position: relative;
     margin-bottom: 30px;
     display: flex;
@@ -802,7 +794,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 1px 1px #6A7553;
 }
 
 .service .service-icon {
@@ -812,14 +804,14 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
+    border: 1px solid #6A7553;
     background: #ffffff;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #6A7553;
     transition: .3s;
 }
 
@@ -980,9 +972,6 @@ a:focus {
     background: url(../img/about.jpg);
     background-size: cover;
     background-position: center;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 45px;
     
     
 
@@ -1044,20 +1033,72 @@ a:focus {
     z-index: 2;
 }
 
-.banner .banner-text .btn {
-    margin-top: 15px;
-    color: #6A7553;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
 .banner .banner-text .btn:hover {
     color: #ffffff;
     background: transparent;
     box-shadow: inset 0 0 0 0 #ffffff;
     border-color: #ffffff;
 }
+.brands {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0px
+}
 
+.brands_slider_container {
+    height: 130px;
+    border: solid 1px #e8e8e8;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 97px;
+    padding-right: 97px;
+    background: #fff
+}
+
+.brands_slider {
+    height: 100%;
+    margin-top: 50px
+}
+
+.brands_item {
+    height: 100%
+}
+
+.brands_item img {
+    max-width: 100%
+}
+
+.brands_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+    cursor: pointer
+}
+
+.brands_nav i {
+    color: #e5e5e5;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.brands_nav:hover i {
+    color: #676767
+}
+
+.brands_prev {
+    left: 40px
+}
+
+.brands_next {
+    right: 40px
+}
 
 /*******************************/
 /********* Pricing CSS *********/
@@ -1396,7 +1437,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #6A7553;
+    background: #EF233C;
 }
 
 .contact .container-fluid {
@@ -1407,7 +1448,7 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #6A7553;
+    background: #EF233C;
 }
 
 .contact .contact-form input {
@@ -1441,7 +1482,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #6A7553;
+    color: #EF233C;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
