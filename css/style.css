@@ -430,7 +430,7 @@ a:focus {
 /*******************************/
 .section-header {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
     margin-top: 10vh;
 }
 
@@ -1046,7 +1046,7 @@ a:focus {
 }
 
 .brands_slider_container {
-    height: 200px;
+    height: 185px;
     border: solid 1px #e8e8e8;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     padding-left: 97px;
